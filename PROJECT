@@ -1,0 +1,9 @@
+domain: dana.io--repo
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: operator-sdk-devspace
+repo: github.com/dana-team/operator-sdk-devspace
+version: "3"
