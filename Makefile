@@ -111,6 +111,8 @@ test: manifests generate fmt vet envtest ## Run tests.
 devspace: manifests generate fmt vet 
 	devspace use namespace $(NAME)-system 2>&1
 	sed -i 's/EXAMPLE/$(NAME)/g' devspace.yaml
+	mkdir -p .vscode
+	mv launch.json .vscode/
 	devspace dev
 
 ##@ Build
